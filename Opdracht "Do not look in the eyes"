@@ -1,0 +1,24 @@
+###Opdrachten
+3. Bekijk de volgende Youtube video: [Do not look in the eyes](https://www.youtube.com/watch?v=66A5uGBqJ6o)
+
+1. Hoe zou je deze installatie kunnen maken?
+Het beeld moet ten eerste kunnen herkennen of iemand in de ogen kijkt, daarna waterspuiten aan zetten. 
+	
+2. Beschrijf wat je er voor nodig zou hebben (software en hardware). 
+Software:
+Moet ogen tracken en gezichten herkennen.
+Hardware: waterspuiten, Waterpomp, Adruino, gezicht van steen (hol), Glazenkast, Bordje met tekst
+Pompje om het water dat uit zijn ogen is gespoten weer optenemen en klaar te zetten om uit de ogen te spuiten
+
+3. Maak een stappenplan van wat de software zou moeten doen.
+If persoon oogcontact maakt met statue {
+	Spuit water
+} Else {
+	Spuit geen water
+}
+If water in pompbak {
+	Pomp water weg
+}
+	
+
+   Zet dit in een markdown of text document, voeg 't toe aan je GitHub. 
