@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofBackground(0, 0, 0);
+    ofSetBackgroundAuto(false);
+    ofBackground(0,0,0);
+    ofEnableAlphaBlending();
+    ofSetFrameRate(150);
     
     for (int i=0; i<20; i++) {
         balls[i].x = ofRandomWidth();
@@ -34,11 +37,12 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-   // for (int i=0; i<10; i++) {
-   //     ofSetColor(255, 255, 0);
-   //     ofDrawCircle(balls[i].x, balls[i], balls[i].radius);
-   // }
+
         for (int i=0; i<20; i++) {
+            ofSetColor(0,0,0,20);
+            ofRect(0,0,ofGetWidth(),ofGetHeight());
+            //ofSetColor(255,255,255,50);
+            //ofCircle(mouseX, mouseY, 20);
             ofSetColor(0, ofRandom(100,155), 0);
             ofCircle(balls[i].x, balls[i].y, balls[i].radius);
         }
